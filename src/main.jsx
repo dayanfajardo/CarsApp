@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";// para el sistema de rutas de mi aplicacion
 
 import './styles.css';
+import '../src/styles/NavBarInitialPage.css';
+import '../src/styles/InitialPage.css';
+import '../src/styles/CarPage.css';
+import '../src/styles/Modal.css';
+
+
 import { AppCar } from './AppCar';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

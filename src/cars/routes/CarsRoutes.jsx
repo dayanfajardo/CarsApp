@@ -16,7 +16,8 @@ export const CarsRoutes = () => {
                 <Route path="porsche" element={<PorschePage />} />
 
                 <Route path="search" element={<SearchPage/>} />
-                <Route path="car" element={<CarPage/>} />
+                {/* Ponemos car/:id para que nos dirija a la pantalla de la informacion de los autos  */}
+                <Route path="car/:id" element={<CarPage/>} />
 
                 
                 {/* Nuestra ruta comodin */}

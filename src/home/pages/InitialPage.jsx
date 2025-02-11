@@ -1,27 +1,16 @@
-import { useNavigate } from "react-router-dom";
+import { NavBarPageInitial } from "../../ui/components/NavBarPageInitial";
 
 export const InitialPage = () => {
 
-const navigate = useNavigate();
 
-const onLogin = () => {
-    navigate('/',{
-      replace: true
-    })
-}
-
-  return (
-    <div className="container mt-5">
-      <h1>Ingresar</h1>
-      <hr />
-
-      <button 
-         className="btn btn-primary" 
-         onClick={ onLogin }  
-      >
-
-      </button>
-
-    </div>
-  )
-}
+      return (
+      <div>
+        <NavBarPageInitial/>
+          <div className="initial-page">
+            <div className="content">
+              <h1>Car Fusion</h1>
+            </div>
+          </div>
+      </div>
+  );
+};

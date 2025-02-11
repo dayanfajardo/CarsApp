@@ -1,0 +1,52 @@
+.car-page {
+    height: 100vh;
+    background-image: url('/public/assets/fondos/fondo-carpage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenedor con fondo semi-transparente */
+  .content-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  /* Botón alineado correctamente */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Botón estilizado */
+  .custom-btn {
+    background-color: #0074ef;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #4b44dc;
+  }
+  
+  /* Corrección para evitar que el botón se mueva fuera en móviles */
+  @media (max-width: 768px) {
+    .custom-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  

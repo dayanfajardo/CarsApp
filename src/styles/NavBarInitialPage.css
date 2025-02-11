@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 40px;
+    margin-right: 10px; /* Espacio entre el logo y el botón */
+  }
+  
+  .navbar-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .navbar-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ajuste del contenido para evitar solapamiento */
+  .initial-page {
+    margin-top: 80px;
+  }
+  

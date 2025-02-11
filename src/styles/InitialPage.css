@@ -1,0 +1,23 @@
+.initial-page {
+    height: 100vh; /* Ocupar toda la pantalla */
+    background-image: url('../public/assets/fondos/fondo2-init.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 48px;
+  }
+  

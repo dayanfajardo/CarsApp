@@ -5,7 +5,7 @@ import { CarList } from "../components"
 export const PorschePage = () => {
   return (
     <>
-      <h1>Porsche cars</h1>
+      <h1>Porsche</h1>
       <hr />
 
       <CarList brand='Porsche' />

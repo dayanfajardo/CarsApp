@@ -1,19 +1,23 @@
+import { useMemo } from "react";
+
 import { getCarsByBrand } from "../helpers"
+import { CarCard } from "./CarCard";
 
 
 export const CarList = ({ brand }) => {
 
-    const cars = getCarsByBrand( brand );
+    const cars = useMemo( () => getCarsByBrand( brand ) , [ brand ] ) 
 
   return (
-    <ul>
+    <div className="row rows-cols-2 row-cols-md-3 g-3">
         {
             cars.map( car => (
-                <li key={car.id}>
-                    { car.name }
-                </li>
+                <CarCard 
+                    key={ car.id }
+                    { ...car }
+                />
             ))
         }
-    </ul>
+    </div>
   )
 }
