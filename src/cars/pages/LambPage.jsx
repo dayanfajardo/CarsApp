@@ -1,9 +1,8 @@
-import { CarList } from "../components/CarList"
+import { CarList } from "../components"
 
 export const LambPage = () => {
 
-
-  
+ 
   return (
     <>
       <h1>Modelos Lamborghini</h1>

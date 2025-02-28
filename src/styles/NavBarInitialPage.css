@@ -1,42 +1,58 @@
+/* Estilos generales del Navbar */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    height: 40px;
-    margin-right: 10px; /* Espacio entre el logo y el botón */
-  }
-  
-  .navbar-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .navbar-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Ajuste del contenido para evitar solapamiento */
-  .initial-page {
-    margin-top: 80px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Sección izquierda del Navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espacio entre logo y botón */
+}
+
+/* Sección derecha del Navbar */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos del Logo */
+.navbar-logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Estilos generales para los botones */
+.navbar-btn {
+  background-color: #0074ef;
+  color: white;
+  padding: 10px 20px; /* Tamaño uniforme */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Mismo tamaño de fuente */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Botón de Login con mismo tamaño pero color diferente */
+.login-btn {
+  background-color: #28a745;
+}
+
+.login-btn:hover {
+  background-color: #218838;
+}

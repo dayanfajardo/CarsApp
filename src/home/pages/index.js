@@ -1,1 +1,3 @@
-export * from './InitialPage';
+export { LoginSellerPage } from "./LoginSellerPage";
+export { RegisterPage } from "./RegisterPage";
+export { InitialPage } from "./InitialPage";

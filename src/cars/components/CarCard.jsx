@@ -1,5 +1,4 @@
 // Componente para exponer imagenes e informacion de los autos
-
 import { Link } from "react-router-dom";
 
 export const CarCard = ({

@@ -4,9 +4,13 @@ import { BrowserRouter } from "react-router-dom";// para el sistema de rutas de 
 
 import './styles.css';
 import '../src/styles/NavBarInitialPage.css';
-import '../src/styles/InitialPage.css';
+// import '../src/styles/InitialPage.css';
 import '../src/styles/CarPage.css';
 import '../src/styles/Modal.css';
+import '../src/styles/CarVideo.css';
+import '../src/styles/LoginSeller.css';
+import '../src/styles/SearchPage.css';
+import '../src/styles/RegisterPage.css';
 
 
 import { AppCar } from './AppCar';

@@ -40,7 +40,7 @@ export const CarPage = () => {
               <li className="list-group-item"><b>Precio: </b>{car.price} ($)</li>
               <li className="list-group-item"><b>Linea: </b>{car.line}</li>
               <li className="list-group-item"><b>Caballos de fuerza: </b>{car.horsepower}</li>
-              <li className="list-group-item"><b>Velocidad final: </b>{car.top_speed} Km/h</li>
+              <li className="list-group-item"><b>Velocidad final: </b>{car.top_speed} km/h</li>
               <li className="list-group-item"><b>Motor: </b>{car.power}</li>
             </ul>
           </div>

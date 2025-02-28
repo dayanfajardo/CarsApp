@@ -1,11 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { Navbar } from "../../ui/components/NavBar"
+import { Navbar } from "../../ui/components"
 import { CarPage, LambPage, PorschePage, SearchPage } from "../pages"
 
 
-
-
 export const CarsRoutes = () => {
+
   return (
         <>
         <Navbar />
