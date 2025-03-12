@@ -30,43 +30,41 @@ const onSearchSubmit = ( event ) => {
     navigate( `?q=${ searchText }`);
 }
  
-
   return (
+    
     <div className="search-container">
-      <hr />
-      <h1 className="search-title">Motor de búsqueda</h1>
+        <hr />
+            <h1 className="search-title">Motor de búsqueda</h1>
+              <div className="search-box">
+                <form onSubmit={onSearchSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Busca un auto"
+                    className="search-input"
+                    name="searchText"
+                    autoComplete="off"
+                    value={searchText}
+                    onChange={onInputChange}
+                  />
+                  <button className="search-btn">Buscar</button>
+                </form>
+              </div>
 
-      <div className="search-box">
-        <form onSubmit={onSearchSubmit}>
-          <input
-            type="text"
-            placeholder="Busca un auto..."
-            className="search-input"
-            name="searchText"
-            autoComplete="off"
-            value={searchText}
-            onChange={onInputChange}
-          />
+            <div className="results-container">
+              {showSearch && <div></div>}
 
-          <button className="search-btn">Buscar</button>
-        </form>
-      </div>
+              {showError && (
+                <div className="alert alert-danger">
+                  No se encontró: <b>{q}</b>
+                </div>
+              )}
 
-      <div className="results-container">
-        {showSearch && <div className="alert alert-primary">Linea de alta gama</div>}
-
-        {showError && (
-          <div className="alert alert-danger">
-            No se encontró: <b>{q}</b>
+              {cars.map((car) => (
+                <div key={car.id} className="car-card">
+                  <CarCard {...car} />
+                </div>
+              ))}
+            </div>
           </div>
-        )}
-
-        {cars.map((car) => (
-          <div key={car.id} className="car-card">
-            <CarCard {...car} />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
+    )
 }

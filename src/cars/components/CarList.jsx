@@ -9,13 +9,15 @@ export const CarList = ({ brand }) => {
     const cars = useMemo( () => getCarsByBrand( brand ) , [ brand ] ) 
 
   return (
-    <div className="row rows-cols-2 row-cols-md-3 g-3">
+    <div className="row rows-cols-2 row-cols-md-3 g-4">
         {
             cars.map( car => (
-                <CarCard 
-                    key={ car.id }
-                    { ...car }
-                />
+                <div className="col mb-4" >
+                    <CarCard 
+                        key={ car.id }
+                        { ...car }
+                    />                    
+                </div>
             ))
         }
     </div>

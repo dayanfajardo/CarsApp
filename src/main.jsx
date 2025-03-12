@@ -11,6 +11,9 @@ import '../src/styles/CarVideo.css';
 import '../src/styles/LoginSeller.css';
 import '../src/styles/SearchPage.css';
 import '../src/styles/RegisterPage.css';
+import '../src/styles/LambPage.css';
+import '../src/styles/PorschePage.css';
+import '../src/styles/CarCard.css';
 
 
 import { AppCar } from './AppCar';

@@ -16,11 +16,12 @@ export const ChartModal = () => {
         <button className="cotizar-btn" onClick={handleModal}>
           Cotizar
         </button>
+        <hr />
 
         {/* Modal */}
         {showModal && (
           <div className="modal show d-block animate__animated animate__fadeIn " tabIndex="-1">
-            <div className="modal-dialog">
+            <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title">Cotiza tu vehículo</h5>

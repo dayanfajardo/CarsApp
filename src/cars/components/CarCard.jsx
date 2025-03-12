@@ -21,9 +21,7 @@ export const CarCard = ({
 
   return (
     
-   <div className="col animate__animated animate__fadeIn" >
-        <div className="card">
-
+   <div className="car-card col animate__animated animate__fadeIn" >      
             <div className="row no-gutters">
                 <div className="col-4">
                   <img 
@@ -43,12 +41,12 @@ export const CarCard = ({
                             className="btn btn-link text-info fill-hover"
                             to={`/car/${ id }`}
                           >
-                              ver más
-                          </Link>
+                          ver más
+                         </Link>
                     </div>
                 </div>                
             </div>
         </div>
-   </div>
+ 
   )
 }

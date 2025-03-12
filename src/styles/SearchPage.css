@@ -1,98 +1,114 @@
 /* Contenedor principal */
 .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Título principal */
-  .search-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo para el formulario */
-  .search-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Input de búsqueda */
-  .search-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  /* Botón de búsqueda */
-  .search-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #0074ef;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .search-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Contenedor de los resultados */
-  .results-container {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  /* Tarjeta de auto */
-  .car-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s;
-  }
-  
-  .car-card:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Mensaje de alerta */
-  .alert {
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .alert-primary {
-    background-color: #e3f2fd;
-    color: #0074ef;
-  }
-  
-  .alert-danger {
-    background-color: #f8d7da;
-    color: #721c24;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Color de fondo suave */
+  min-height: 100vh;
+}
+
+/* Título principal */
+.search-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de la caja de búsqueda */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Efecto hover para la caja */
+.search-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Input de búsqueda */
+.search-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0074ef;
+  box-shadow: 0 0 0 2px rgba(0, 116, 239, 0.2);
+}
+
+/* Botón de búsqueda */
+.search-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #0074ef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Resultados */
+.results-container {
+  background: transparent; /* Asegura que no haya un color de fondo */
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Tarjeta de auto */
+.car-card {
+  background: #1e1e1e; /* Negro uniforme */
+  color: white; /* Texto claro */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra uniforme */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Alertas */
+.alert {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.alert-danger {
+  background-color: #fdecea;
+  color: #d93025;
+}

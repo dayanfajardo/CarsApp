@@ -5,11 +5,13 @@ import { CarList } from "../components"
 export const PorschePage = () => {
   return (
     <>
-      <h1>Porsche</h1>
-      <hr />
+    <div className="background-pors"></div>
+      <div className="pors-page-content">
+        <h1>Modelos Porsche</h1>
+        <hr />
 
-      <CarList brand='Porsche' />
-
+        <CarList brand='Porsche' />
+      </div>  
     </>
   )
 }
