@@ -5,22 +5,25 @@ export const Navbar = () => {
 
     // Custom hook de react router dom para ayudarnos con la navegacion
     const navigate = useNavigate();
-
+    const isLoggedIn = !!localStorage.getItem("token"); // Comprobamos si hay token
+    // console.log(req.body)
 
     // Componente para salir de la aplicacion y volver al initialPage
     const onLogout = () =>{
         // con esto digo que quiero navegar al initialPage
-        navigate('/initial', {
-        // El replace deniega que pueda volver al historial anterior
-            replace: true
-        })
+        localStorage.removeItem("token");
+        navigate('/initial', { replace: true });
     }
+
+    const onLogin = () => {
+        navigate('/login');
+      };
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">            
             <Link 
                 className="navbar-brand" 
-                to="/"
+                to="/initial"
             >
                 CF
             </Link>
@@ -47,6 +50,17 @@ export const Navbar = () => {
                         >
                             BUSCAR
                         </NavLink>
+                        
+                        {
+                        isLoggedIn && (
+                        <NavLink
+                            className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
+                            to="/dashboard-seller"
+                        >
+                            COTIZACIONES
+                        </NavLink>
+            )
+          }
                     </div>
                 </div>
 
@@ -56,12 +70,15 @@ export const Navbar = () => {
                         Ventas premium
                     </span>
 
-                    <button
-                        className='nav-item nav-link btn'
-                        onClick={ onLogout }
-                    >
-                        Salir   
-                    </button>
+                    {isLoggedIn ? (
+                        <button className='nav-item nav-link btn' onClick={onLogout}>
+                        Salir
+                        </button>
+                    ) : (
+                        <button className='nav-item nav-link btn' onClick={onLogin}>
+                        Login Vendedor
+                        </button>
+                    )}
                 </ul>
             </div>
         </nav>

@@ -1,28 +1,27 @@
 import { NavBarPageInitial } from "../../ui/components";
-import { Link } from "react-router-dom";
 import { useRegisterSeller } from "../hooks/useRegisterSeller";
-
-
+import { Link } from "react-router-dom";
 
 export const RegisterPage = () => {
-  const { formData, error, handleChange, handleSubmit } = useRegisterSeller(); //Corregir error
+  const { formData, error, success, handleChange, handleSubmit } = useRegisterSeller();
 
   return (
-    <div className="register-container">
+    <div className="login-container">
       <NavBarPageInitial />
-      <div className="register-box">
+      <div className="login-box">
         <h3><b>Registro de Vendedor</b></h3>
 
         {error && <p className="error-message">{error}</p>}
+        {success && <p className="success-message">{success}</p>}
 
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <label htmlFor="name">Nombre Completo</label>
+            <label htmlFor="name">Nombre</label>
             <input
               type="text"
               name="name"
               id="name"
-              placeholder="Tu nombre"
+              placeholder="Ingresa tu nombre"
               value={formData.name}
               onChange={handleChange}
               required
@@ -43,12 +42,25 @@ export const RegisterPage = () => {
           </div>
 
           <div className="input-group">
+            <label htmlFor="phone">Número de Celular</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Ingresa tu número"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="input-group">
             <label htmlFor="password">Contraseña</label>
             <input
               type="password"
               name="password"
               id="password"
-              placeholder="Crea una contraseña"
+              placeholder="Ingresa tu contraseña"
               value={formData.password}
               onChange={handleChange}
               required
@@ -61,19 +73,18 @@ export const RegisterPage = () => {
               type="password"
               name="confirmPassword"
               id="confirmPassword"
-              placeholder="Repite tu contraseña"
+              placeholder="Confirma tu contraseña"
               value={formData.confirmPassword}
               onChange={handleChange}
               required
             />
           </div>
 
-          <button type="submit" className="register-btn">Registrarse</button>
+          <button type="submit" className="login-btn">Registrarse</button>
         </form>
 
-        {/* Enlace para ir a la página de inicio de sesión */}
         <p className="register-link">
-          ¿Ya tienes una cuenta?<Link to="/login">Inicia sesión aquí</Link>
+          ¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link>
         </p>
       </div>
     </div>

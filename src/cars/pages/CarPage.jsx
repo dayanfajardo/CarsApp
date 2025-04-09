@@ -53,7 +53,7 @@ export const CarPage = () => {
           </button>
         </div>
 
-        <ChartModal />
+        <ChartModal carName={car.name}/>
       </div>
     </div>
   );

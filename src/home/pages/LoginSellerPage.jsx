@@ -1,16 +1,15 @@
 import { NavBarPageInitial } from "../../ui/components";
-import { useLoginSeller } from "../../home/hooks";
+import { useLoginSeller } from "../hooks/useLoginSeller";
 import { Link } from "react-router-dom";
 
 export const LoginSellerPage = () => {
-  
-const { formData, error, handleChange, handleSubmit } = useLoginSeller();     
+  const { formData, error, handleChange, handleSubmit } = useLoginSeller();
 
   return (
     <div className="login-container">
-        <NavBarPageInitial/>
+      <NavBarPageInitial />
       <div className="login-box">
-        <h3><b>Iniciar sesion</b></h3>
+        <h3><b>Iniciar Sesión</b></h3>
 
         {error && <p className="error-message">{error}</p>}
 
@@ -45,7 +44,7 @@ const { formData, error, handleChange, handleSubmit } = useLoginSeller();
         </form>
 
         <p className="register-link">
-          ¿No tiene una cuenta aún? <Link to='/register'>Regístrate aqui</Link>
+          ¿No tienes una cuenta? <Link to="/register">Regístrate aquí</Link>
         </p>
       </div>
     </div>
