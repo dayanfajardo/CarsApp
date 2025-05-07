@@ -1,3 +1,5 @@
+// Muestra la información detallada de un auto seleccionado, incluyendo su imagen, línea y motor.
+
 import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getCarsById } from "../helpers";
@@ -28,7 +30,7 @@ export const CarPage = () => {
           <hr />
           <div className="col-4">
             <img
-              src={`/assets/cars/${id}.jpg`}
+              src={car.image}
               alt={car.name}
               className="img-thumbnail animate__animated animate__fadeIn"
             />

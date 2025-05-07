@@ -12,9 +12,8 @@ export const InitialPage = () => {
           <CarVideo/>      
             <div className="initial-page">
              <div className="content">   
-          {/* <h1>Bienvenido a Car Fusion</h1>                  */}
+         </div>
         </div>
-      </div>
       </div>
   );
 };

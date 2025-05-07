@@ -10,7 +10,8 @@ export const cars = [
     horsepower: 770,
     top_speed: 350,
     cylinders: 12,
-    power: '6.5L V12'
+    power: '6.5L V12',
+    image:'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-aventador-svj_ffn9ie.jpg',    
   },
   {
     id: 'lamb-huracan-evo',
@@ -23,7 +24,8 @@ export const cars = [
     horsepower: 640,
     top_speed: 325,
     cylinders: 10,
-    power: '5.2L V10'
+    power: '5.2L V10',
+    image:'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-huracan-evo_fqcrfr.jpg', 
   },
   {
     id: 'lamb-urus',
@@ -36,7 +38,8 @@ export const cars = [
     horsepower: 641,
     top_speed: 305,
     cylinders: 8,
-    power: '4.0L V8 Twin-Turbo'
+    power: '4.0L V8 Twin-Turbo',
+    image:'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/lamb-urus_ub0iih.jpg', 
   },
   {
     id: 'lamb-sian-fkp-37',
@@ -49,7 +52,8 @@ export const cars = [
     horsepower: 819,
     top_speed: 350,
     cylinders: 12,
-    power: '6.5L V12 + Hybrid'
+    power: '6.5L V12 + Hybrid',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-sian-fkp-37_o9ytgh.jpg',
   },
   {
     id: 'lamb-gallardo',
@@ -62,7 +66,8 @@ export const cars = [
     horsepower: 550,
     top_speed: 320,
     cylinders: 10,
-    power: '5.2L V10'
+    power: '5.2L V10',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-gallardo_l4l25l.jpg',
   },
   {
     id: 'lamb-veneno',
@@ -75,7 +80,8 @@ export const cars = [
     horsepower: 750,
     top_speed: 355,
     cylinders: 12,
-    power: '6.5L V12'
+    power: '6.5L V12',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/lamb-veneno_xzgz2y.jpg',
   },
   {
     id: 'lamb-centenario',
@@ -88,7 +94,8 @@ export const cars = [
     horsepower: 770,
     top_speed: 350,
     cylinders: 12,
-    power: '6.5L V12'
+    power: '6.5L V12',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-centenario_qsnwjt.jpg',
   },
   {
     id: 'lamb-reventon',
@@ -101,7 +108,8 @@ export const cars = [
     horsepower: 650,
     top_speed: 340,
     cylinders: 12,
-    power: '6.5L V12'
+    power: '6.5L V12',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-reventon_enztw3.jpg',
   },
   {
     id: 'lamb-countach',
@@ -114,7 +122,8 @@ export const cars = [
     horsepower: 814,
     top_speed: 355,
     cylinders: 12,
-    power: '6.5L V12 Hybrid'
+    power: '6.5L V12 Hybrid',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-countach_zsuugl.jpg',
   },
   {
     id: 'lamb-diablo',
@@ -127,7 +136,8 @@ export const cars = [
     horsepower: 385,
     top_speed: 280,
     cylinders: 12,
-    power: '3.9L V12'
+    power: '3.9L V12',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652622/lamb-diablo_usytr8.jpg',
   },
   {
     id: 'porsche-911-carrera',
@@ -140,7 +150,8 @@ export const cars = [
     horsepower: 379,
     top_speed: 293,
     cylinders: 6,
-    power: '3.0L Flat-6 Turbo'
+    power: '3.0L Flat-6 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/porsche-911-carrera_z0rh8x.jpg',
   },
   {
     id: 'porsche-911-turbo-s',
@@ -153,7 +164,8 @@ export const cars = [
     horsepower: 640,
     top_speed: 330,
     cylinders: 6,
-    power: '3.8L Flat-6 Twin-Turbo'
+    power: '3.8L Flat-6 Twin-Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-911-turbo-s_idrdrr.jpg',
   },
   {
     id: 'porsche-taycan',
@@ -166,7 +178,8 @@ export const cars = [
     horsepower: 402,
     top_speed: 250,
     cylinders: 0,
-    power: 'Electric Motor'
+    power: 'Electric Motor',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-taycan_ndvkqm.jpg',
   },
   {
     id: 'porsche-cayenne',
@@ -179,7 +192,8 @@ export const cars = [
     horsepower: 335,
     top_speed: 245,
     cylinders: 6,
-    power: '3.0L V6 Turbo'
+    power: '3.0L V6 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-cayenne_f85x7a.jpg',
   },
   {
     id: 'porsche-macan',
@@ -192,7 +206,8 @@ export const cars = [
     horsepower: 261,
     top_speed: 232,
     cylinders: 4,
-    power: '2.0L Inline-4 Turbo'
+    power: '2.0L Inline-4 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-macan_abquwn.jpg',
   },
   {
     id: 'porsche-panamera',
@@ -205,7 +220,8 @@ export const cars = [
     horsepower: 325,
     top_speed: 270,
     cylinders: 6,
-    power: '2.9L V6 Turbo'
+    power: '2.9L V6 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-panamera_aoen0y.jpg',
   },
   {
     id: 'porsche-718-boxster',
@@ -218,7 +234,8 @@ export const cars = [
     horsepower: 300,
     top_speed: 275,
     cylinders: 4,
-    power: '2.0L Flat-4 Turbo'
+    power: '2.0L Flat-4 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/porsche-718-boxster_ghe25b.jpg',
   },
   {
     id: 'porsche-718-cayman',
@@ -231,7 +248,8 @@ export const cars = [
     horsepower: 300,
     top_speed: 275,
     cylinders: 4,
-    power: '2.0L Flat-4 Turbo'
+    power: '2.0L Flat-4 Turbo',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/porsche-718-cayman_v67lry.jpg',
   },
   {
     id: 'porsche-911-gt3-rs',
@@ -244,7 +262,8 @@ export const cars = [
     horsepower: 518,
     top_speed: 296,
     cylinders: 6,
-    power: '4.0L Flat-6 NA'
+    power: '4.0L Flat-6 NA',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652623/porsche-911-gt3-rs_clmkif.jpg',
   },
   {
     id: 'porsche-918-spyder',
@@ -257,6 +276,7 @@ export const cars = [
     horsepower: 887,
     top_speed: 345,
     cylinders: 8,
-    power: '4.6L V8 Hybrid'
+    power: '4.6L V8 Hybrid',
+    image: 'https://res.cloudinary.com/dh51oehpr/image/upload/v1746652624/porsche-918-spyder_jhkllv.jpg'
   }
 ];

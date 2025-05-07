@@ -1,9 +1,14 @@
+// Panel privado que muestra las cotizaciones recibidas por los usuarios.
+// Solo accesible si el vendedor ha iniciado sesión correctamente.
+
+
 import Swal from 'sweetalert2';
 import { useEffect, useState } from "react";
 import { NavBarPageInitial } from "../../ui/components";
-import authApi from "../../auth/api/authApi"; // o axios configurado
+import authApi from "../../auth/api/authApi"; 
 
 export const DashboardSellerPage = () => {
+  
   const [cotizaciones, setCotizaciones] = useState([]);
 
   const cargarCotizaciones = async () => {
@@ -20,6 +25,9 @@ export const DashboardSellerPage = () => {
   }, []);
 
   const eliminarCotizacion = async (id) => {
+    /**
+     * swalfire libreria para alertas de mensajes
+     */
     const result = await Swal.fire({
       title: '¿Estás seguro?',
       text: "¡Esta acción no se puede deshacer!",
@@ -35,7 +43,7 @@ export const DashboardSellerPage = () => {
       try {
         await authApi.delete(`/quotes/${id}`);
         Swal.fire('Eliminado', 'La cotización ha sido eliminada.', 'success');
-        cargarCotizaciones(); // recargar la lista
+        cargarCotizaciones(); 
       } catch (error) {
         Swal.fire('Error', 'Hubo un problema al eliminar.', 'error');
       }

@@ -3,6 +3,7 @@ import { useLoginSeller } from "../hooks/useLoginSeller";
 import { Link } from "react-router-dom";
 
 export const LoginSellerPage = () => {
+  
   const { formData, error, handleChange, handleSubmit } = useLoginSeller();
 
   return (

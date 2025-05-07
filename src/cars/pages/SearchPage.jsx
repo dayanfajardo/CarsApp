@@ -1,3 +1,8 @@
+
+// Página que permite buscar autos por nombre.
+// Muestra los resultados usando el componente `CarCard` y un fondo personalizado.
+
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "../../hooks/useForm"
 import queryString from 'query-string';
@@ -30,41 +35,42 @@ const onSearchSubmit = ( event ) => {
     navigate( `?q=${ searchText }`);
 }
  
-  return (
-    
+return (
+  <>
+    <div className="background-search" />
     <div className="search-container">
-        <hr />
-            <h1 className="search-title">Motor de búsqueda</h1>
-              <div className="search-box">
-                <form onSubmit={onSearchSubmit}>
-                  <input
-                    type="text"
-                    placeholder="Busca un auto"
-                    className="search-input"
-                    name="searchText"
-                    autoComplete="off"
-                    value={searchText}
-                    onChange={onInputChange}
-                  />
-                  <button className="search-btn">Buscar</button>
-                </form>
-              </div>
+      <hr />
+      <h1 className="search-title">Motor de búsqueda</h1>
+      <div className="search-box">
+        <form onSubmit={onSearchSubmit}>
+          <input
+            type="text"
+            placeholder="Busca un auto"
+            className="search-input"
+            name="searchText"
+            autoComplete="off"
+            value={searchText}
+            onChange={onInputChange}
+          />
+          <button className="search-btn">Buscar</button>
+        </form>
+      </div>
 
-            <div className="results-container">
-              {showSearch && <div></div>}
-
-              {showError && (
-                <div className="alert alert-danger">
-                  No se encontró: <b>{q}</b>
-                </div>
-              )}
-
-              {cars.map((car) => (
-                <div key={car.id} className="car-card">
-                  <CarCard {...car} />
-                </div>
-              ))}
-            </div>
+      <div className="results-container">
+        {showSearch && <div></div>}
+        {showError && (
+          <div className="alert alert-danger">
+            No se encontró: <b>{q}</b>
           </div>
-    )
+        )}
+        {cars.map((car) => (
+          <div key={car.id} className="car-card">
+            <CarCard {...car} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </>
+);
+
 }

@@ -1,5 +1,10 @@
+
+// Modal que contiene un formulario para que el usuario cotice un vehículo.
+// Recoge el correo, teléfono y el nombre del auto y lo envía al backend.
+
+
 import { useState } from "react";
-import { validateAndSubmitQuote } from "../helpers/validateAndSubmitQuote"; // Asegúrate de que la ruta esté correcta
+import { validateAndSubmitQuote } from "../helpers/validateAndSubmitQuote"; 
 
 export const ChartModal = ({ carName }) => {
   const [showModal, setShowModal] = useState(false);
